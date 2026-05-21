@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.py[cod]
+*.log
+*TEMP_MPY_wvf_snd.mp4
+output/*
+!output/.gitkeep
+assets/bgm/*
+!assets/bgm/.gitkeep
+assets/fonts/*
+!assets/fonts/.gitkeep
+assets/overlays/*
+!assets/overlays/.gitkeep
