@@ -28,9 +28,9 @@ def enforce_style(prompt: str) -> str:
 def fallback_prompt_for_repo(repo: TrendingRepo) -> str:
     description = repo.description or "developer tool gaining strong momentum"
     return (
-        f"Premium cinematic visualization of GitHub project {repo.author}/{repo.name}, "
-        f"concept: {description}, source code streams, floating repository cards, "
-        f"developer workflow UI, {STYLE_SUFFIX}"
+        f"Frontier report visualization of GitHub project {repo.author}/{repo.name}, "
+        f"concept: {description}, trend signal card, code telemetry panel, repository radar, "
+        f"developer workflow dashboard, {STYLE_SUFFIX}"
     )
 
 
@@ -59,7 +59,7 @@ def build_image_prompts(
 
 def build_thumbnail_prompt(plan: VideoPlan, repos: List[TrendingRepo]) -> str:
     names = ", ".join(f"{repo.author}/{repo.name}" for repo in repos)
-    base = plan.thumbnail_prompt or f"Premium thumbnail for GitHub Trending projects: {names}"
+    base = plan.thumbnail_prompt or f"GitHub trend briefing thumbnail for projects: {names}"
     return enforce_style(base)
 
 
